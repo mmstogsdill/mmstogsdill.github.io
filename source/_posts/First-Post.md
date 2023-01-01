@@ -11,7 +11,7 @@ Welcome to my website. This is my first post.
 
 ---
 
-![6 ft. Lemon Shark caught in Florida](images/Shark6.jpeg)
+![8'9" Lemon Shark caught in Florida](images/Shark6.jpeg)
 
 ---
 
