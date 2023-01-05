@@ -24,7 +24,7 @@ Since there isn't a 2021 Reading Recap here is what I read in 2021.
 - **The Shining**, Stephen King
 - **1984**, George Orwell
 - **Living with a Seal**, Jesse Itzler
-- **The Sublte Art of not Giving a F*ck**, Mark Manson
+- **The Subtle Art of not Giving a F*ck**, Mark Manson
 
 I definitely didn't get to read as much as I set out to do but it was still a great year. I've moved closer to my goal of reading every Stephen King novel with the addition of Doctor Sleep, IT, Insomnia, and Needful Things and have a lot more on my plate for 2023. 
 
