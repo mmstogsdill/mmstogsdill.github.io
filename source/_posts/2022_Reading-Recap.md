@@ -3,7 +3,7 @@ title: 2022 Reading Recap
 date: 2023-01-01 00:00:00
 ---
 
-In 2022 I set out to reach my goal of reading 10 books before the end of the year. ALlthough I fell a bit short of that goal I still had some great reads. 
+In 2022 I set out to reach my goal of reading 10 books before the end of the year. Although I fell a bit short of that goal I still had some great reads. 
 
 ## What I read in 2022
 
