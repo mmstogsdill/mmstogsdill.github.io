@@ -13,10 +13,17 @@
 <meta property="og:site_name" content="Matthieu Stogsdill">
 <meta property="og:description" content="This semester I completed the first course of Senior Design at the University of Iowa. The course split us into teams where my team and I were able to put into practice everything we’ve learned the la">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://mstogsdill.net/images/ThermoFinalPrototype.jpeg">
+<meta property="og:image" content="https://mstogsdill.net/images/ThermometerGUI.jpeg">
+<meta property="og:image" content="https://mstogsdill.net/images/ElectricEyeFinalPrototype.jpeg">
+<meta property="og:image" content="https://mstogsdill.net/images/ElectricEyeDiagram.jpeg">
+<meta property="og:image" content="https://mstogsdill.net/images/UIUXStoryboard.jpeg">
+<meta property="og:image" content="https://mstogsdill.net/images/UIUXHomeScreen.jpeg">
 <meta property="article:published_time" content="2022-01-10T06:00:00.000Z">
-<meta property="article:modified_time" content="2023-02-21T23:33:06.087Z">
+<meta property="article:modified_time" content="2023-03-20T19:50:50.111Z">
 <meta property="article:author" content="Matthieu Stogsdill">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://mstogsdill.net/images/ThermoFinalPrototype.jpeg">
   
     <link rel="alternate" href="/atom.xml" title="Matthieu Stogsdill" type="application/atom+xml">
   
@@ -96,12 +103,32 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>This semester I completed the first course of Senior Design at the University of Iowa. The course split us into teams where my team and I were able to put into practice everything we’ve learned the last three years with our degree. The course assigns three different Electrical&#x2F;Computer Engineering projects that end with each team producing a final product.</p>
-<h1 id="Project-1-Digital-Thermometer-with-Web-Interface"><a href="#Project-1-Digital-Thermometer-with-Web-Interface" class="headerlink" title="Project 1 - Digital Thermometer with Web Interface"></a>Project 1 - Digital Thermometer with Web Interface</h1><p>The first project my team and I were given was to create a Digital Thermometer that was able to display the current temperature on a screen as well as on an online display. </p>
-<h1 id="Project-2-Electric-Eye-Safety-System"><a href="#Project-2-Electric-Eye-Safety-System" class="headerlink" title="Project 2 - Electric Eye Safety System"></a>Project 2 - Electric Eye Safety System</h1><h1 id="Project-3-Polling-Website-UI-x2F-UX-Design"><a href="#Project-3-Polling-Website-UI-x2F-UX-Design" class="headerlink" title="Project 3 - Polling Website UI&#x2F;UX Design"></a>Project 3 - Polling Website UI&#x2F;UX Design</h1>
+<h1 id="Project-1-Digital-Thermometer-with-Web-Interface"><a href="#Project-1-Digital-Thermometer-with-Web-Interface" class="headerlink" title="Project 1 - Digital Thermometer with Web Interface"></a>Project 1 - Digital Thermometer with Web Interface</h1><p>The first project, and in my opinion the most satisfying to finsih, my team and I were given was to create a digital thermometer that was able to display the current temperature on a screen as well as on an online display.</p>
+<p>The thermometer enclosure includes a raspberry pi for the main processing unit, a temperture probe that has been repurposed with XLR connections so that it may plugged and unplugged to and from the enclosure. In addition, there is an LCD screen to display temperature, an on&#x2F;off swtich, and a button to turn on the screen and see current temperature data. The entire device is powered by a 20,100 mAh portable charger.</p>
+<p><img src="/images/ThermoFinalPrototype.jpeg" alt="Thermometer Enclosure"></p>
+<p>The thermometer uses a Raspberrry pi to run two python scripts on boot up. The first script is primarily for checking the on&#x2F;off state of the device. The second script creates and runs a server and the pi then continuosly checks for user inputs, client connection and messages, and sends temperature data once a second.</p>
+<p><img src="/images/ThermometerGUI.jpeg" alt="Thermometer GUI"></p>
+<p>On the other side our computer is running a script which connects to the server the raspberry pi has created. The client receives temperature data and displays it on the graphical interface. The interface allows for Celcius and Farenheit, text messaging for threshold alerts, and visual graph to see temperature changes over time.</p>
+<p>If you want to check out a more detailed report of the project you can see it here. This is our final report my team and I wrote to be submitted with our project.<br><a href="docs/ThermometerWithWebInterface.pdf">Broken Engineers Thermometer with Web Interface Final Report</a></p>
+<h1 id="Project-2-Electric-Eye-Safety-System"><a href="#Project-2-Electric-Eye-Safety-System" class="headerlink" title="Project 2 - Electric Eye Safety System"></a>Project 2 - Electric Eye Safety System</h1><p>The second project of the semester was to create an Electric Eye Safety System. Our team was told this was to simulate an emergency stop that you might see in a factory. If you had a conveyer belt or heavy equipment and a foreign object were to break the connections made between a laser emitter and receiver the entire process would shutdown to prevent injury.</p>
+<p><img src="/images/ElectricEyeFinalPrototype.jpeg" alt="Electric Eye Safety System Receiver"></p>
+<p>Our project was to create a receiver capable of receiving an infrared signal from a transmitter made by the professors and T.A.’s. This project was a great challenge as it made use of the circuit design knowledge I had gained in my previous courses. In order to complete this project I needed to use what I knew about hardware filtering signals, AC to DC conversion, amplification of electrical signals, unity gain amplifiers, and reading voltages using the analog converter on an Arduino.</p>
+<p><img src="/images/ElectricEyeDiagram.jpeg" alt="Electric Eye Safety System Schematic"></p>
+<p>The receiver my team and I created receives the infrared signal from the transmitter and creates a small electrical waveform. The signal passes through a buffer so there is no influence from components outside the filter portion making sure the signal comes out exactly as calculated. This project made great use of the website <a target="_blank" rel="noopener" href="https://tools.analog.com/en/filterwizard/">Filter Wizard</a> check it out if you ever need help creating hardware filters for your projects.The circuit the filters out the noise from ambient light so that we have a clean waveform to work with. After filtering the signal passes through an amplifier and AC to DC converter so that the signal may be read by the Arduino. If the infrared signal between Tx and Rx is broken the LED at the end of the breadboard is lit up signaling that the system must be shut down.</p>
+<p>If you want to check out a more detailed report of the project you can see it here. This is our final report my team and I wrote to be submitted with our project.<br><a href="docs/ElectricEyeSafetySystem.pdf">Broken Engineers Electric Eye Safety System Final Report</a></p>
+<h1 id="Project-3-Polling-Website-UI-x2F-UX-Design"><a href="#Project-3-Polling-Website-UI-x2F-UX-Design" class="headerlink" title="Project 3 - Polling Website [UI&#x2F;UX Design]"></a>Project 3 - Polling Website [UI&#x2F;UX Design]</h1><p>The final project for the course and the most challenging for myself was to create a polling website. The website to be made had to be a polling website similar to doodlepoll.com which is a scheduling tool that allows the user to set up meetings and appointments for a large group of people. Our goal was to build on this concept and add more user intuitive and helpful features.</p>
+<p>The website was required to have multiple pages including a home page, admin page, create poll page, modify page, poll page, and login page. In addition to login and admin page there is a harcoded username and password that allows for a single admin to sign in and make changes to polls as needed.</p>
+<p>The website makes use of the gatsby framework which has a number of helpful plugins to make the most of the UI&#x2F;UX design portion of the project. Each page was written using HTML and a majority of the stylized components like buttons and font were downloaded from libraries.</p>
+<p><img src="/images/UIUXStoryboard.jpeg" alt="Polling Website Storyboard"></p>
+<p>This project turned out to be the most challenging for me as I was an electrical engineer with a lot of experience in hardware and hardware focused programming. Luckily, my teammates who are computer science and engineering majors have a had a lot of experience in web development. This being the case my main focus and contribution was to fimiliarize myself with the gatsby framework and programming the login page for the site.</p>
+<p><img src="/images/UIUXHomeScreen.jpeg" alt="Creating a Poll"></p>
+<p>The entire website can obviously not be shown in a few screenshots but there is a report of the entire project included below.</p>
+<p>If you want to check out a more detailed report of the project you can see it here. This is our final report my team and I wrote to be submitted with our project.<br><a href="docs/PollingWebsiteUIUXDesign.pdf">Broken Engineers Polling Website UI&#x2F;UX Design Final Report</a></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://mstogsdill.net/Senior-Design-01/" data-id="cleevu1v50002g4ogezyqde0i" data-title="Senior Design Fall 2021" class="article-share-link">Share</a>
+      <a data-url="https://mstogsdill.net/Senior-Design-01/" data-id="clfh8s7dk0002gep0c3py40hy" data-title="Senior Design Fall 2021" class="article-share-link">Share</a>
       
       
       
