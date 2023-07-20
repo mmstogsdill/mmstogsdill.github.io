@@ -19,12 +19,6 @@ Here is a test of markdown syntax
 
 ---
 
-Here is a link to my friend Ben's website who helped me start this website!
-
-[mitchinson.dev](https://mitchinson.dev/)
-
----
-
 `Hello` `World`
 
 > Goals for the future of this website. 

@@ -3,7 +3,7 @@ title: 2022 Reading Recap
 date: 2023-01-01 00:00:00
 ---
 
-In 2022 I set out to reach my goal of reading 10 books before the end of the year. Although I fell a bit short of that goal I still had some great reads. 
+In 2022, I embarked on a mission to read 10 books before the year's end. Although I fell slightly short of the target, my reading journey was still filled with captivating and inspirational reads.
 
 ## What I read in 2022
 
@@ -26,8 +26,8 @@ Since there isn't a 2021 Reading Recap here is what I read in 2021.
 - **Living with a Seal**, Jesse Itzler
 - **The Subtle Art of not Giving a F*ck**, Mark Manson
 
-I definitely didn't get to read as much as I set out to do but it was still a great year. I've moved closer to my goal of reading every Stephen King novel with the addition of Doctor Sleep, IT, Insomnia, and Needful Things and have a lot more on my plate for 2023. 
+Although I didn't manage to read as much as I had initially planned, it was still a remarkable year. I made progress towards my goal of reading every Stephen King novel, and in 2022, I added **Doctor Sleep**, **IT**, **Insomnia**, and **Needful Things** to my list. Looking forward, my reading list for 2023 is already brimming with exciting titles.
 
 ### Favorite Book of 2022
 
-My favorite this year definitely had to be **Can't Hurt Me** by David Goggins. I was introduced to Goggins when a friend let me borrow **Living with a Seal** by Jesse Itzler and I later found that Goggins had written his own book. **Can't Hurt Me** tells Goggins lifetime of struggle and rise to the toughest man on planet Earth as he becomes the first and only member of the US Armed Forces to complete SEAL training, Army Ranger School, and Air Force Tactical Air Controller training. Goggins philosphy is that you can achieve anything you put your mind to and most of us don't even tap into half of what our minds and bodies are capable of. Goggins story is inspiring to anyone who's looking to see what it means for a human to push himself above and beyond his limits and I'm excited to see what he reveals in his upcoming book **Never Finished** in 2023.
+Among all the books I read this year, **Can’t Hurt Me** by David Goggins stood out as an absolute favorite. My introduction to Goggins came when a friend lent me **Living with a Seal** by Jesse Itzler, and through that, I discovered Goggins' own compelling story. **Can’t Hurt Me** narrates Goggins' lifetime of struggles and his extraordinary journey to becoming the toughest man on the planet. His achievements include being the first and only member of the US Armed Forces to complete SEAL training, Army Ranger School, and Air Force Tactical Air Controller training. Goggins' philosophy revolves around the idea that we have the power to achieve anything we set our minds to, often failing to tap into even half of our mental and physical potential. His story is incredibly inspiring, particularly for those seeking to understand the depths to which a human can push themselves beyond perceived limits. Excitement is building within me as I eagerly anticipate his upcoming book, **Never Finished**, scheduled for release in 2023. I can't wait to uncover more of his insights and wisdom.

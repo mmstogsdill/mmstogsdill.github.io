@@ -4,57 +4,60 @@ date: 2022-01-10 00:00:00
 tags:
 ---
 
-This semester I completed the first course of Senior Design at the University of Iowa. The course split us into teams where my team and I were able to put into practice everything we've learned the last three years with our degree. The course assigns three different Electrical/Computer Engineering projects that end with each team producing a final product.
+This semester, I successfully completed the first course of Senior Design at the University of Iowa. Throughout the course, we were divided into teams, affording my team and me the opportunity to apply the knowledge we had accumulated over the past three years with our degree. The course entailed three distinct Electrical/Computer Engineering projects, each culminating in the creation of a final product.
 
 # Project 1 - Digital Thermometer with Web Interface
 
-The first project, and in my opinion the most satisfying to finsih, my team and I were given was to create a digital thermometer that was able to display the current temperature on a screen as well as on an online display.
-
-The thermometer enclosure includes a raspberry pi for the main processing unit, a temperture probe that has been repurposed with XLR connections so that it may plugged and unplugged to and from the enclosure. In addition, there is an LCD screen to display temperature, an on/off swtich, and a button to turn on the screen and see current temperature data. The entire device is powered by a 20,100 mAh portable charger.
+The initial project, which I personally found most fulfilling, involved the development of a digital thermometer capable of displaying the current temperature on both a screen and an online interface. The thermometer enclosure houses a Raspberry Pi, serving as the main processing unit, along with a temperature probe that has been ingeniously repurposed with XLR connections, allowing for convenient plug-and-play functionality within the enclosure. Additionally, the enclosure features an LCD screen to display temperature readings, an on/off switch, and a button to activate the screen and view current temperature data. Remarkably, the entire device is powered by a 20,100 mAh portable charger.
 
 ![Thermometer Enclosure](images/ThermoFinalPrototype.jpeg)
 
-The thermometer uses a Raspberrry pi to run two python scripts on boot up. The first script is primarily for checking the on/off state of the device. The second script creates and runs a server and the pi then continuosly checks for user inputs, client connection and messages, and sends temperature data once a second.
+Operating on boot-up, the thermometer utilizes a Raspberry Pi to execute two Python scripts. The first script primarily checks the device's on/off state, while the second script establishes and operates a server. The Raspberry Pi continuously monitors user inputs, client connections, messages, and sends temperature data at one-second intervals.
 
 ![Thermometer GUI](images/ThermometerGUI.jpeg)
 
-On the other side our computer is running a script which connects to the server the raspberry pi has created. The client receives temperature data and displays it on the graphical interface. The interface allows for Celcius and Farenheit, text messaging for threshold alerts, and visual graph to see temperature changes over time.
+On the receiving end, our computer runs a script that connects to the server created by the Raspberry Pi. This client script receives temperature data and presents it through a graphical interface. The interface offers options for Celsius and Fahrenheit display, text messaging for threshold alerts, and a visual graph to observe temperature changes over time.
 
+By the end of the project, my team and I had not only learned valuable skills in electrical hardware and software but also developed a fully functional digital thermometer that showcased our knowledge and studying in Electrical/Computer Engineering.
 
 If you want to check out a more detailed report of the project you can see it here. This is our final report my team and I wrote to be submitted with our project.
 [Broken Engineers Thermometer with Web Interface Final Report](docs/ThermometerWithWebInterface.pdf)
 
 # Project 2 - Electric Eye Safety System
 
-The second project of the semester was to create an Electric Eye Safety System. Our team was told this was to simulate an emergency stop that you might see in a factory. If you had a conveyer belt or heavy equipment and a foreign object were to break the connections made between a laser emitter and receiver the entire process would shutdown to prevent injury.
+The second project of the semester involved the creation of an Electric Eye Safety System, designed to simulate an emergency stop scenario often encountered in industrial settings, such as factories with conveyor belts or heavy equipment. The system's goal was to prevent injuries by triggering a shutdown if a foreign object disrupted the connection between a laser emitter and receiver.
 
 ![Electric Eye Safety System Receiver](images/ElectricEyeFinalPrototype.jpeg)
 
-Our project was to create a receiver capable of receiving an infrared signal from a transmitter made by the professors and T.A.'s. This project was a great challenge as it made use of the circuit design knowledge I had gained in my previous courses. In order to complete this project I needed to use what I knew about hardware filtering signals, AC to DC conversion, amplification of electrical signals, unity gain amplifiers, and reading voltages using the analog converter on an Arduino.
+Our team's specific task was to develop a receiver capable of capturing an infrared signal transmitted by the professors and T.A.'s custom-made transmitter. This project presented a significant challenge, as it demanded the application of circuit design knowledge acquired in previous courses. To successfully complete this undertaking, I had to draw upon my expertise in hardware signal filtering, AC to DC conversion, electrical signal amplification, unity gain amplifiers, and voltage reading using an analog converter on an Arduino.
 
 ![Electric Eye Safety System Schematic](images/ElectricEyeDiagram.jpeg)
 
-The receiver my team and I created receives the infrared signal from the transmitter and creates a small electrical waveform. The signal passes through a buffer so there is no influence from components outside the filter portion making sure the signal comes out exactly as calculated. This project made great use of the website [Filter Wizard](https://tools.analog.com/en/filterwizard/) check it out if you ever need help creating hardware filters for your projects.The circuit the filters out the noise from ambient light so that we have a clean waveform to work with. After filtering the signal passes through an amplifier and AC to DC converter so that the signal may be read by the Arduino. If the infrared signal between Tx and Rx is broken the LED at the end of the breadboard is lit up signaling that the system must be shut down.
+The receiver we created efficiently captures the infrared signal from the transmitter and converts it into a compact electrical waveform. To ensure utmost accuracy, the signal is carefully passed through a buffer, protecting it from any external component influence and preserving its precise calculated nature. During the project, we found the website [Filter Wizard](https://tools.analog.com/en/filterwizard/) to be an invaluable resource for creating hardware filters, and I highly recommend it to anyone in need of such assistance for their projects.
+
+The circuit we designed effectively filters out ambient light noise, producing a clean waveform that allows for seamless processing. Following the filtering stage, the signal is directed through an amplifier and an AC to DC converter, making it readable by the Arduino. Whenever the infrared signal between the transmitter and receiver is interrupted, a LED located at the end of the breadboard illuminates, signaling the imperative need to shut down the system.
+
+Throughout this project, I gained invaluable experience and honed my skills in tackling complex engineering challenges, reaffirming my passion for Electrical/Computer Engineering.
 
 If you want to check out a more detailed report of the project you can see it here. This is our final report my team and I wrote to be submitted with our project.
 [Broken Engineers Electric Eye Safety System Final Report](docs/ElectricEyeSafetySystem.pdf)
 
 # Project 3 - Polling Website [UI/UX Design]
 
-The final project for the course and the most challenging for myself was to create a polling website. The website to be made had to be a polling website similar to doodlepoll.com which is a scheduling tool that allows the user to set up meetings and appointments for a large group of people. Our goal was to build on this concept and add more user intuitive and helpful features.
+The final project for the course proved to be the most challenging and rewarding endeavor, as it required creating a polling website with enhanced features to rival the functionality of doodlepoll.com. This scheduling tool allows users to efficiently set up meetings and appointments for large groups, and our aim was to take this concept even further by incorporating more user-friendly and intuitive elements.
 
-The website was required to have multiple pages including a home page, admin page, create poll page, modify page, poll page, and login page. In addition to login and admin page there is a harcoded username and password that allows for a single admin to sign in and make changes to polls as needed.
+The website demanded multiple pages, each serving a distinct purpose: the home page, admin page, create poll page, modify page, poll page, and login page. Notably, the login and admin pages featured a hardcoded username and password, granting exclusive access to a single admin for making necessary poll changes.
 
-The website makes use of the gatsby framework which has a number of helpful plugins to make the most of the UI/UX design portion of the project. Each page was written using HTML and a majority of the stylized components like buttons and font were downloaded from libraries.
+To achieve the desired UI/UX design, we leveraged the gatsby framework, harnessing its wealth of helpful plugins. Each page was skillfully crafted using HTML, and we adorned the website with stylized components like buttons and fonts sourced from various libraries.
 
 ![Polling Website Storyboard](images/UIUXStoryboard.jpeg)
 
-This project turned out to be the most challenging for me as I was an electrical engineer with a lot of experience in hardware and hardware focused programming. Luckily, my teammates who are computer science and engineering majors have a had a lot of experience in web development. This being the case my main focus and contribution was to fimiliarize myself with the gatsby framework and programming the login page for the site.
-
+This project proved particularly challenging for me, as my background lay primarily in electrical engineering with extensive experience in hardware and hardware-focused programming. However, I was fortunate to collaborate with talented teammates majoring in computer science and engineering, who brought considerable expertise in web development to the table. With their support, I dedicated myself to mastering the gatsby framework and undertook the responsibility of programming the login page for the site.
 
 ![Creating a Poll](images/UIUXHomeScreen.jpeg)
 
-The entire website can obviously not be shown in a few screenshots but there is a report of the entire project included below.
+In the end, this collaborative effort allowed me to broaden my skillset and venture into the realm of web development, highlighting the invaluable learning experiences that come from interdisciplinary teamwork.
 
+The entire website can obviously not be shown in a few screenshots but there is a report of the entire project included below.
 If you want to check out a more detailed report of the project you can see it here. This is our final report my team and I wrote to be submitted with our project.
 [Broken Engineers Polling Website UI/UX Design Final Report](docs/PollingWebsiteUIUXDesign.pdf)
